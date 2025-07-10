@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرکت ساینتکس </title>
+    <meta name="description" content="Synetex پیشرو در طراحی و توسعه وب‌سایت‌های حرفه‌ای، اپلیکیشن موبایل، سئو و UI/UX. آینده دیجیتال کسب‌وکار شما را با ما بسازید و حضوری قوی در دنیای آنلاین داشته باشید.">
+    <meta name="keywords" content="طراحی وب‌سایت، توسعه وب، سئو، بهینه‌سازی موتور جستجو، اپلیکیشن موبایل، UI/UX، طراحی رابط کاربری، تجربه کاربری، شرکت برنامه‌نویسی، Synetex، ساخت وب‌سایت">
+    <meta name="author" content="Synetex Development Team">
+
+    <meta property="og:title" content="Synetex - طراحی و توسعه وب‌سایت حرفه‌ای">
+    <meta property="og:description" content="Synetex: آینده دیجیتال شما، تخصص ماست. طراحی وب‌سایت‌های پیشرفته و خلاقانه، کسب‌وکار شما را در دنیای دیجیتال متحول می‌کنیم.">
+    <meta property="og:image" content="https://www.synetex.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.synetex.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SynetexCo">
+    <meta name="twitter:title" content="Synetex - طراحی و توسعه وب‌سایت حرفه‌ای">
+    <meta name="twitter:description" content="Synetex: آینده دیجیتال شما، تخصص ماست. طراحی وب‌سایت‌های پیشرفته و خلاقانه، کسب‌وکار شما را در دنیای دیجیتال متحول می‌کنیم.">
+    <meta name="twitter:image" content="https://www.synetex.com/images/twitter-image.jpg">
+
+    <link rel="icon" href="https://www.synetex.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Synetex - طراحی و توسعه وب‌سایت",
+      "url": "https://www.synetex.com",
+      "logo": "https://www.synetex.com/images/synetex-logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+98-21-XXXXXXX",
+        "contactType": "customer service",
+        "areaServed": "IR",
+        "availableLanguage": ["Persian","English"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/synetex",
+        "https://twitter.com/synetex",
+        "https://www.linkedin.com/company/synetex",
+        "https://www.instagram.com/synetex"
+      ]
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <style>
+        /* Base Styles & Variables */
+        :root {
+            --dark-bg: #1A1A2E; /* Deep Indigo - Darker */
+            --dark-secondary-bg: #2C2C4A; /* Darker Purple-Grey */
+            --text-light: #E0E0E0; /* Light Grey for body text */
+            --text-lighter: #F5F5F5; /* Near white for headings */
+            --accent-color: #8A2BE2; /* Bright Violet - Primary Accent */
+            --accent-light: #9B59B6; /* Lighter Violet */
+            --gradient-start: #4A00B0; /* Deep Purple for Gradients */
+            --gradient-end: #8A2BE2; /* Violet for Gradients */
+            --border-color: #444466; /* Subtle Border */
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            direction: rtl; /* Right-to-Left for Persian */
+            text-align: right; /* Default text alignment for RTL */
+        }
+
+        body.no-scroll {
+            overflow: hidden; /* Disable scroll when mobile menu is open */
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-light);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--dark-secondary-bg);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between; /* Adjusted for hamburger */
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.05);
+            color: var(--accent-light);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 30px; /* Adjust for RTL */
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1.1em;
+            position: relative;
+            transition: color 0.3s ease;
+            padding-bottom: 5px;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            bottom: 0;
+            right: 0; /* For RTL */
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        nav ul li a:hover {
+            color: var(--accent-light);
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-toggle {
+            display: none; /* Hidden by default on desktop */
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 1001; /* Above navigation */
+            position: relative; /* For animation */
+        }
+
+        .menu-toggle .bar {
+            width: 100%;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        /* Animation for Hamburger to Close Icon */
+        .menu-toggle.is-active .bar:nth-child(1) {
+            transform: translateY(11px) rotate(-45deg);
+        }
+
+        .menu-toggle.is-active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.is-active .bar:nth-child(3) {
+            transform: translateY(-11px) rotate(45deg);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 85vh; /* Slightly taller for more impact */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(45deg, var(--dark-bg), var(--dark-secondary-bg));
+            position: relative;
+            overflow: hidden;
+            padding: 0 5%;
+        }
+
+        /* Removed hero::before as Particles.js handles background */
+        /* .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
+            animation: rotateBackground 20s linear infinite;
+        }
+
+        @keyframes rotateBackground {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        } */
+
+        .hero h1 {
+            font-size: 3.8em;
+            color: var(--text-lighter);
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+            z-index: 1;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(138, 43, 226, 0.5); /* Subtle glow */
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            max-width: 900px;
+            animation: fadeInUp 1.2s ease-out;
+            z-index: 1;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            color: var(--text-lighter);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            position: relative;
+            overflow: hidden;
+            border: none; /* Ensure no default button border */
+            cursor: pointer;
+            display: inline-flex; /* To align icon and text */
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Space between text and icon */
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: skewX(-30deg);
+            transition: all 0.5s ease;
+            z-index: 0; /* Ensure it's behind text */
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .btn span {
+            position: relative;
+            z-index: 1; /* Ensure text is above ::before */
+        }
+        .btn i { /* Icon inside button */
+            position: relative;
+            z-index: 1;
+            margin-right: 0; /* Reset default */
+            margin-left: -5px; /* Adjust icon position for RTL */
+            transition: transform 0.3s ease;
+        }
+        .btn:hover i {
+            transform: translateX(-5px); /* Move icon on hover */
+        }
+
+        /* General Sections */
+        section {
+            padding: 80px 5%;
+            background-color: var(--dark-secondary-bg);
+            border-top: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden; /* For animations */
+        }
+        section:nth-child(even) {
+            background-color: var(--dark-bg);
+        }
+
+        .section-title {
+            font-size: 2.8em;
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-light);
+            bottom: -15px;
+            left: 50%; /* For RTL */
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .service-item {
+            background-color: var(--dark-bg);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 1px solid var(--border-color);
+            opacity: 0; /* Initial state for animation */
+            transform: translateY(30px); /* Initial state for animation */
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            background-color: var(--dark-secondary-bg);
+        }
+
+        .service-item i {
+            font-size: 3.8em;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+        .service-item:hover i {
+            transform: scale(1.1);
+        }
+
+        .service-item h3 {
+            font-size: 1.9em;
+            color: var(--text-lighter);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .service-item p {
+            font-size: 1.1em;
+            color: var(--text-light);
+        }
+
+        /* Portfolio Section */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-item {
+            background-color: var(--dark-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+            opacity: 0; /* Initial state for animation */
+            transform: translateY(30px); /* Initial state for animation */
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .portfolio-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .portfolio-info h3 {
+            font-size: 1.7em;
+            color: var(--text-lighter);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .portfolio-info p {
+            color: var(--text-light);
+            font-size: 1em;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            opacity: 0; /* Initial state for animation */
+            transform: translateY(30px); /* Initial state for animation */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* General animation */
+        }
+
+        .about-content p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .contact-info,
+        .contact-form {
+            background-color: var(--dark-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            opacity: 0; /* Initial state for animation */
+            transform: translateY(30px); /* Initial state for animation */
+        }
+
+        .contact-info h3,
+        .contact-form h3 {
+            font-size: 2.2em;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* For RTL */
+            flex-direction: row-reverse; /* For RTL */
+        }
+
+        .contact-info p i {
+            color: var(--accent-light);
+            margin-left: 0; /* Reset default */
+            margin-right: 15px; /* For RTL */
+            font-size: 1.4em;
+            min-width: 30px; /* Ensure icon alignment */
+            text-align: center;
+        }
+
+        .contact-info p a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info p a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links-contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .social-links-contact a {
+            font-size: 2.5em;
+            margin: 0 15px;
+            color: var(--text-light);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-links-contact a:hover {
+            transform: scale(1.2);
+            color: var(--accent-color);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: var(--text-lighter);
+            font-weight: 400;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            background-color: var(--dark-secondary-bg);
+            color: var(--text-light);
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            outline: none; /* Remove default focus outline */
+            caret-color: var(--accent-color); /* Cursor color */
+            text-align: right; /* For RTL input */
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(224, 224, 224, 0.6); /* Lighter placeholder */
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.3); /* Glowing effect */
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            color: var(--text-lighter);
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Space between text and icon */
+        }
+
+        .contact-form button i {
+            margin-right: 0; /* Reset default */
+            margin-left: 10px; /* For RTL */
+            transition: transform 0.3s ease;
+        }
+        .contact-form button:hover i {
+            transform: translateX(5px); /* Move icon on hover */
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .form-message {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 1.1em;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .form-message.show {
+            opacity: 1;
+        }
+        .form-message.success {
+            color: #d4edda;
+            background-color: #28a745; /* Darker green */
+            border: 1px solid #218838;
+        }
+        .form-message.error {
+            color: #f8d7da;
+            background-color: #dc3545; /* Darker red */
+            border: 1px solid #c82333;
+        }
+
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            margin-top: 50px;
+            height: 450px; /* Fixed height for map */
+            opacity: 0; /* Initial state for animation */
+            transform: translateY(30px); /* Initial state for animation */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-secondary-bg);
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 5%;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .social-links-footer {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links-footer a {
+            color: var(--text-light);
+            font-size: 1.8em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .social-links-footer a:hover {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .footer-text {
+            font-size: 0.9em;
+            margin-top: 20px;
+            width: 100%; /* Take full width on small screens */
+            text-align: center;
+        }
+
+        /* CSS Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Generic animation for elements appearing on scroll */
+        .animated-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* General animation */
+        }
+        .animated-element.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Particles.js Background Styling */
+        .particles-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0; /* Ensures particles are behind text content */
+        }
+        /* Make sure content is above particles */
+        .hero h1, .hero p, .hero .btn {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        /* Overlay for Mobile Menu */
+        .overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            z-index: 998; /* Below menu, above content */
+            transition: opacity 0.4s ease-in-out;
+            opacity: 0;
+        }
+
+        .overlay.is-visible {
+            display: block;
+            opacity: 1;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+            .section-title {
+                font-size: 2.4em;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr; /* Stack columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: row; /* Keep logo and hamburger on one line */
+                justify-content: space-between; /* Space out logo and hamburger */
+                padding: 15px 5%;
+            }
+
+            .menu-toggle {
+                display: flex; /* Show hamburger icon on mobile */
+            }
+
+            nav#main-nav {
+                position: fixed;
+                top: 0;
+                right: -100%; /* Start off-screen to the right for RTL */
+                width: 70%; /* Adjust as needed */
+                height: 100vh;
+                background-color: var(--dark-secondary-bg); /* Darker background for menu */
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); /* Shadow on the left */
+                transition: right 0.4s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 999; /* Below hamburger icon */
+            }
+
+            nav#main-nav.is-open {
+                right: 0; /* Slide in from the right */
+            }
+
+            nav#main-nav ul {
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav#main-nav ul li {
+                margin: 20px 0; /* More vertical space */
+                width: 100%;
+                text-align: center;
+            }
+
+            nav#main-nav ul li a {
+                font-size: 1.5em; /* Larger links */
+                padding: 10px 0;
+                display: block; /* Make links take full width */
+            }
+            nav#main-nav ul li a::after {
+                right: 50%; /* Center the underline for RTL */
+                transform: translateX(50%);
+            }
+
+
+            /* General mobile adjustments */
+            .hero {
+                height: 70vh;
+                padding-top: 80px; /* Adjust for fixed header */
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+            .section-title {
+                font-size: 2em;
+                margin-bottom: 40px;
+            }
+            .services-grid, .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-item, .portfolio-item, .contact-info, .contact-form {
+                padding: 30px;
+            }
+            .footer-content {
+                flex-direction: column;
+            }
+            .social-links-footer {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .section-title {
+                font-size: 1.8em;
+            }
+            .contact-info p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#hero" class="logo">Synetex</a>
+        <div class="menu-toggle" id="mobile-menu" role="button" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#hero"><span>خانه</span></a></li>
+                <li><a href="#services"><span>خدمات</span></a></li>
+                <li><a href="#portfolio"><span>نمونه کارها</span></a></li>
+                <li><a href="#about"><span>درباره ما</span></a></li>
+                <li><a href="#about"><span> </span></a></li>
+
+                <li><a href="#contact"><span>تماس باما</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div id="particles-js" class="particles-background"></div> <h1>رویای دیجیتال شما. واقعیت ما</h1>
+            <p>در ساینتکس ما با طراحی و توسعه وب‌سایت‌های پیشرفته و خلاقانه، کسب‌وکار شما را در دنیای دیجیتال متحول می‌کنیم و حضوری قوی برای شما می‌سازیم.</p>
+            <a href="#contact" class="btn"><span>شروع پروژه شما</span> <i class="fas fa-arrow-left"></i></a>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">خدمات جامع توسعه وب و دیجیتال</h2>
+                <div class="services-grid">
+                    <div class="service-item animated-element">
+                        <i class="fas fa-desktop"></i>
+                        <h3>طراحی وب‌سایت سفارشی و ریسپانسیو</h3>
+                        <p>طراحی وب‌سایت‌هایی منحصر به فرد و کاربرپسند که هویت برند شما را منعکس می‌کنند و در تمامی دستگاه‌ها عالی به نظر می‌رسند.</p>
+                    </div>
+                    <div class="service-item animated-element">
+                        <i class="fas fa-code"></i>
+                        <h3>توسعه وب‌سایت و اپلیکیشن پیشرفته</h3>
+                        <p>پیاده‌سازی وب‌سایت‌های قدرتمند و مقیاس‌پذیر با استفاده از جدیدترین تکنولوژی‌ها و فریم‌ورک‌ها.</p>
+                    </div>
+                    <div class="service-item animated-element">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>توسعه اپلیکیشن موبایل بومی و هیبریدی</h3>
+                        <p>ساخت اپلیکیشن‌های موبایل حرفه‌ای و بهینه برای سیستم‌عامل‌های iOS و Android.</p>
+                    </div>
+                    <div class="service-item animated-element">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>بهینه‌سازی موتور جستجو (SEO) و سئو فنی</h3>
+                        <p>افزایش دید وب‌سایت شما در نتایج جستجو، جذب ترافیک ارگانیک بیشتر و بهینه‌سازی ساختار فنی سایت.</p>
+                    </div>
+                    <div class="service-item animated-element">
+                        <i class="fas fa-palette"></i>
+                        <h3>تجربه کاربری و رابط کاربری (UI/UX) خلاقانه</h3>
+                        <p>طراحی رابط‌های کاربری بصری و تجربه‌های کاربری روان و لذت‌بخش برای کاربران شما.</p>
+                    </div>
+                    <div class="service-item animated-element">
+                        <i class="fas fa-cloud"></i>
+                        <h3>مشاوره و راه‌اندازی زیرساخت ابری و هاستینگ</h3>
+                        <p>ارائه راهکارهای ابری امن، مطمئن و مقیاس‌پذیر برای میزبانی وب‌سایت و داده‌های شما.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="section-title">برخی از نمونه کارهای برجسته ما</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item animated-element">
+                        <img src="https://via.placeholder.com/400x250/333355/E0E0E0?text=وبسایت+شرکتی+مدرن" alt="نمونه پروژه وب‌سایت شرکتی مدرن طراحی شده توسط Synetex">
+                        <div class="portfolio-info">
+                            <h3>وب‌سایت شرکتی حرفه‌ای</h3>
+                            <p>طراحی مدرن و ریسپانسیو برای یک شرکت پیشرو در صنعت فناوری.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animated-element">
+                        <img src="https://via.placeholder.com/400x250/333355/E0E0E0?text=پلتفرم+تجارت+الکترونیک" alt="پروژه پلتفرم تجارت الکترونیک با قابلیت‌های پیشرفته">
+                        <div class="portfolio-info">
+                            <h3>فروشگاه آنلاین با تجربه کاربری بالا</h3>
+                            <p>پلتفرم تجارت الکترونیک قدرتمند با تمرکز بر تجربه خرید یکپارچه و بهینه.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animated-element">
+                        <img src="https://via.placeholder.com/400x250/333355/E0E0E0?text=اپلیکیشن+مدیریت+پروژه" alt="نمونه اپلیکیشن وب مدیریت پروژه طراحی شده توسط Synetex">
+                        <div class="portfolio-info">
+                            <h3>اپلیکیشن وب اختصاصی مدیریت پروژه</h3>
+                            <p>ابزار مدیریت پروژه مبتنی بر وب با قابلیت‌های پیشرفته برای تیم‌های بزرگ.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animated-element">
+                        <img src="https://via.placeholder.com/400x250/333355/E0E0E0?text=پورتال+آموزشی+آنلاین" alt="تصویر پورتال آموزش آنلاین با طراحی جذاب Synetex">
+                        <div class="portfolio-info">
+                            <h3>پورتال آموزشی و LMS آنلاین</h3>
+                            <p>سیستم مدیریت یادگیری (LMS) با رابط کاربری جذاب و امکانات کامل برای آموزش از راه دور.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">درباره ما: فلسفه Synetex</h2>
+                <div class="about-content animated-element">
+                    <p>Synetex یک شرکت پیشرو در زمینه طراحی و توسعه وب‌سایت و نرم‌افزار است که با تیمی از متخصصان خلاق و باتجربه، به کسب‌وکارها کمک می‌کند تا در دنیای دیجیتال بدرخشند. ما به ارائه راه‌حل‌های نوآورانه، با کیفیت بالا و مشتری‌مدار متعهد هستیم. فلسفه ما بر پایه درک عمیق نیازهای شما و ارائه راه‌حل‌های سفارشی‌سازی شده برای رسیدن به اهدافتان بنا شده است.</p>
+                    <p>هدف ما فراتر از کدنویسی است؛ ما به دنبال ایجاد تجربیات دیجیتالی هستیم که نه تنها زیبا و کاربردی باشند، بلکه به رشد و موفقیت کسب‌وکار شما نیز کمک کنند و بازگشت سرمایه (ROI) قابل توجهی را به ارمغان آورند.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">تماس با Synetex - برای مشاوره رایگان</h2>
+                <div class="contact-grid">
+                    <div class="contact-info animated-element">
+                        <h3>اطلاعات تماس</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> آدرس:فارس . شیراز. خرمبید. قادرآباد</p>
+                        <p><i class="fas fa-phone-alt"></i>  مرادی : تلفن <a href="tel:+989178537782">+989178537782</a></p>
+                        <p><i class="fas fa-envelope"></i> ایمیل: <a href="mailto:synetex1386@gmail.com">synetex1386@gmail.com</a></p>
+                        <p><i class="fas fa-clock"></i> ساعات کاری: شنبه تا چهارشنبه، ۹:۰۰ صبح تا ۱۷:۰۰ عصر</p>
+                        <div class="social-links-contact">
+                            <a href="https://wa.me/989178537782" target="_blank" rel="noopener noreferrer" title="واتساپ Synetex"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://t.me/kali_linux_1386" target="_blank" rel="noopener noreferrer" title="تلگرام Synetex"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://www.linkedin.com/company/synetex" target="_blank" rel="noopener noreferrer" title="لینکدین Synetex"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/mhmd_error" target="_blank" rel="noopener noreferrer" title="اینستاگرام Synetex"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form animated-element">
+                        <h3>ارسال پیام برای ما</h3>
+                        <form id="contactForm">
+                            <label for="name">نام کامل:</label>
+                            <input type="text" id="name" name="name" required placeholder="نام و نام خانوادگی شما">
+
+                            <label for="email">ایمیل شما:</label>
+                            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+                            <label for="subject">موضوع پیام:</label>
+                            <input type="text" id="subject" name="subject" required placeholder="موضوع اصلی پیام شما">
+
+                            <label for="message">پیام شما:</label>
+                            <textarea id="message" name="message" required placeholder="جزئیات درخواست یا سوال خود را اینجا بنویسید..."></textarea>
+
+                            <button type="submit"><span>ارسال پیام</span> <i class="fas fa-paper-plane"></i></button>
+                            <div id="formMessage" class="form-message" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="map-container animated-element">
+                    <h3 style="color: var(--text-lighter); text-align: center; margin-bottom: 20px; font-size: 1.8em;">موقعیت ما روی نقشه</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12959.98188177397!2d51.4285888!3d35.7001479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzAwLjUiTiA1McKwMjYnMTQuOCJF!5e0!3m2!1sen!2suk!4v1678912345678!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقعیت مکانی Synetex در تهران"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#hero" class="footer-logo">Synetex</a>
+            <div class="social-links-footer">
+                <a href="#" target="_blank" rel="noopener noreferrer" title="فیسبوک Synetex"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" title="توییتر Synetex"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/synetex" target="_blank" rel="noopener noreferrer" title="لینکدین Synetex"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/synetex" target="_blank" rel="noopener noreferrer" title="اینستاگرام Synetex"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">  .تمامی حقوق محفوظ است. |مدیر شرکت : محمد امین مرادی  Synetex</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const animatedElements = document.querySelectorAll('.animated-element');
+
+        const observerOptions = {
+            root: null, // relative to the viewport
+            rootMargin: '0px',
+            threshold: 0.2 // when 20% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+
+                    const parentGrid = entry.target.closest('.services-grid, .portfolio-grid, .contact-grid');
+                    if (parentGrid) {
+                        const siblings = Array.from(parentGrid.children).filter(child => child.classList.contains('animated-element'));
+                        const index = siblings.indexOf(entry.target);
+                        if (index !== -1) {
+                            entry.target.style.transitionDelay = `${index * 0.15}s`;
+                        }
+                    } else {
+                        entry.target.style.transitionDelay = '0s';
+                    }
+                    
+                    // observer.unobserve(entry.target); // Uncomment this line if you want to animate only once
+                } else {
+                    // Optional: remove 'is-visible' when element leaves viewport to re-animate on scroll back
+                    // entry.target.classList.remove('is-visible');
+                    // entry.target.style.transitionDelay = '0s';
+                }
+            });
+        }, observerOptions);
+
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) { // After scrolling 80px
+                header.style.backgroundColor = 'rgba(44, 44, 74, 0.95)'; // Slightly transparent
+                header.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.5)';
+            } else {
+                header.style.backgroundColor = 'var(--dark-secondary-bg)';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+            }
+        });
+
+        // Hamburger Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu');
+        const mainNav = document.getElementById('main-nav');
+        const navLinks = document.querySelectorAll('#main-nav ul li a');
+        const body = document.body;
+
+        // Create overlay element
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        document.body.appendChild(overlay);
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('is-active');
+            mainNav.classList.toggle('is-open');
+            overlay.classList.toggle('is-visible');
+            body.classList.toggle('no-scroll'); // Add/remove no-scroll class to body
+            // Update aria-expanded for accessibility
+            mobileMenuToggle.setAttribute('aria-expanded', mobileMenuToggle.classList.contains('is-active'));
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('is-active');
+                mainNav.classList.remove('is-open');
+                overlay.classList.remove('is-visible');
+                body.classList.remove('no-scroll'); // Re-enable scroll
+                mobileMenuToggle.setAttribute('aria-expanded', 'false'); // Update aria-expanded
+            });
+        });
+
+        // Close menu when overlay is clicked
+        overlay.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('is-active');
+            mainNav.classList.remove('is-open');
+            overlay.classList.remove('is-visible');
+            body.classList.remove('no-scroll');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false'); // Update aria-expanded
+        });
+
+        // Contact Form Submission Handling (AJAX Simulation)
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            formMessage.textContent = 'در حال ارسال پیام...';
+            formMessage.classList.remove('success', 'error');
+            formMessage.classList.add('show');
+            formMessage.setAttribute('aria-live', 'assertive'); // Announce to screen readers
+
+            // Simulate API call
+            setTimeout(() => {
+                const isSuccess = Math.random() > 0.3; // Simulate 70% success rate
+
+                if (isSuccess) {
+                    formMessage.textContent = 'پیام شما با موفقیت ارسال شد! به زودی با شما تماس می‌گیریم.';
+                    formMessage.classList.add('success');
+                    contactForm.reset(); // Clear the form on success
+                } else {
+                    formMessage.textContent = 'ارسال پیام با خطا مواجه شد. لطفاً دوباره تلاش کنید.';
+                    formMessage.classList.add('error');
+                }
+                // Optional: Hide message after a few seconds
+                setTimeout(() => {
+                    formMessage.classList.remove('show');
+                }, 5000); // Message disappears after 5 seconds
+            }, 1500); // Simulate network delay
+        });
+
+        /* Particles.js Configuration */
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#9B59B6" /* Light Violet */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#9B59B6", /* Light Violet */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        /* End Particles.js Configuration */
+    </script>
+</body>
+</html>
